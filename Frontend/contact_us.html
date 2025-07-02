@@ -1,0 +1,70 @@
+<!-- /pages/contact_us.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="contact_us.css"> 
+
+   <title>About Us</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+
+  <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+    .w3-bar-block .w3-bar-item {padding:20px}
+  </style>
+</head>
+<body>
+  <!-- Header include -->
+  <div data-include="header.html"></div>
+
+  <!-- About Section -->
+ <section class="contact-section">
+  <h1 class="contact-title">CONTACT <br><span class="us-text">US</span></h1>
+
+  <form class="contact-form">
+    <div class="form-left">
+      <label class="contact-label">FULL NAME</label>
+      <input type="text" class="input-line">
+
+      <label class="contact-label">EMAIL</label>
+      <input type="email" class="input-line">
+    </div>
+
+    <div class="form-right">
+      <label class="contact-label"for="message">MESSAGE</label>
+<textarea class="input-message" rows="3" placeholder=""></textarea>
+
+    </div>
+  </form>
+
+<p class="contact-email-bottom">
+  <a href="mailto:HELLO@THEPUNUCORNER.COM">HELLO@THEPUNUCORNER.COM</a>
+</p>
+</section>
+
+
+
+  <div style="height: 100px;"></div>
+
+  
+  <!-- Footer include -->
+  <div data-include="footer.html"></div>
+
+  <script src="layout.js"></script>
+
+   <!-- Sidebar controls -->
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+</body>
+</html>

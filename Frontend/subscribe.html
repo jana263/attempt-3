@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Newsletter Subscription</title>
+</head>
+<body>
+  <h1>Subscribe to Our Newsletter</h1>
+  <form id="subscribeForm">
+    <input type="email" id="emailInput" placeholder="Your email" required>
+    <button type="submit">Subscribe</button>
+    <div id="message"></div>
+  </form>
+
+  <script>
+    document.getElementById('subscribeForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = document.getElementById('emailInput').value.trim();
+      const messageEl = document.getElementById('message');
+
+      try {
+        const response = await fetch('/subscribe', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email })
+        });
+
+        const data = await response.json();
+        messageEl.textContent = data.message;
+        messageEl.style.color = data.success ? 'green' : 'orange';
+
+        if (data.success) {
+          document.getElementById('emailInput').value = '';
+        }
+      } catch (error) {
+        messageEl.textContent = 'Network error. Please try again.';
+        messageEl.style.color = 'red';
+      }
+    });
+  </script>
+</body>
+</html>

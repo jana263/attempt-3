@@ -1,0 +1,106 @@
+/* ===== Contact Section Styles ===== */
+
+.contact-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.contact-title {
+  margin-top: 100px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 190px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 1;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.contact-title .us-text {
+  font-size: 190px;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 60px;
+  flex-wrap: wrap;
+}
+
+.form-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+  margin-left: 180px;
+  margin-top: -250px;
+}
+
+.form-right {
+  display: flex;
+  flex-direction: column;
+  margin-top: -240px;
+  margin-right: 100px;
+  align-items: flex-start; /* This aligns children (including label) to the right! */
+}
+
+.form-left {
+  gap: 10px;
+}
+
+
+.contact-label {
+  font-size: 12px;
+  color: #000000;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+  text-align: left;
+  text-transform: uppercase;
+  font-family: 'Arial', sans-serif;
+  display: block; /* Ensures label takes full width and aligns left */
+}
+
+.input-line {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+  width: 150px;
+  margin-bottom: 40px;
+  font-size: 10px;
+  outline: none;
+}
+
+/* ===== Lined Textarea ===== */
+textarea {
+  width: 300px;
+  height: 90px;              /* 3 lignes × 30px */
+  font-size: 20px;           /* Ajuste si besoin pour que le texte ne déborde pas la ligne */
+  line-height: 30px;         
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 29px,        /* 1px avant la ligne */
+    #000 29px,
+    #000 30px
+  );
+  background-size: 100% 30px; /* Doit être égal à line-height */
+  background-repeat: repeat-y;
+  border: none;
+  outline: none;
+  padding: 2px 5px;
+  resize: none;
+  box-shadow: none;
+  margin-top: -200px;
+  text-align: left;
+}
+
+.contact-email-bottom {
+  margin-top: 60px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #000000;
+}

@@ -1,0 +1,191 @@
+* Global Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Karma', sans-serif;
+  background-color: #ffffff;
+  color: #222;
+}
+
+/* === HEADER === */
+.custom-topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+  border-bottom: 1px solid #eee;
+}
+
+.custom-header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  position: relative;
+}
+
+.custom-button {
+  font-size: 24px;
+  padding: 8px 16px;
+  color: black;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* === LOGO CENTER === */
+.logo-line-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 1;
+}
+
+.logo-line-container hr {
+  flex-grow: 0;        
+  width: 450px;
+  height: 1px;
+  border: none;
+  background-color: black;
+}
+
+.logo-line-container img {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* === SIDEBAR MENU === */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.3s ease;
+  padding: 80px 20px 20px;
+  z-index: 1001;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+
+#sidebarMenu {
+  width: 0;
+  overflow: hidden;
+  transition: 0.3s ease;
+  padding: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar .main-menu > li {
+  margin-bottom: 20px;
+}
+
+.sidebar .menu-title {
+  font-size: 15px;
+  padding-top: 50px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-family: Montserrat SemiBold;
+}
+
+.sidebar .plus-icon {
+  font-size: 20px;
+  padding-left: 130px;
+  color: rgb(255, 255, 255);
+}
+
+
+
+
+.sidebar .submenu {
+  display: none;
+  margin-top: 10px;
+  padding-left: 15px;
+}
+
+.sidebar li:hover .submenu {
+  display: block;
+}
+
+
+
+/* === CLOSE BUTTON (optional if used) === */
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 36px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+}
+
+/* === OVERLAY === */
+.overlay {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+
+
+/* Submenu List Items */
+.submenu li {
+  font-family: 'Karma', sans-serif;
+  font-size: 14px;
+  color: #fff;
+  margin: 6px 0;
+  padding-left: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Optional: Reset anchor tags if used */
+.submenu li a {
+  color: inherit;
+  text-decoration: none;
+  font-size: inherit;
+  font-family: inherit;
+  display: inline-block;
+}
+
+/* Shining text effect on hover — no background box */
+.submenu li:hover,
+.submenu li a:hover {
+  color: white;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff;
+}  

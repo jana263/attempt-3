@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Header Only</title>
+  <link rel="stylesheet" href="header.css">
+  <link href="https://fonts.googleapis.com/css2?family=Karma&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- PURE HEADER STRUCTURE -->
+  <div class="custom-topbar">
+    <div class="custom-header-container">
+     <div class="custom-button left-button" onclick="toggleMenu()">☰</div>
+      <div class="custom-button right-button">🔍︎</div>
+      <div class="logo-line-container">
+        <hr>
+        <img src="Photos\the_punu_corner_logo-removebg-preview.png" alt="Logo" class="logo-img">
+        <hr>
+      </div>
+    </div>
+  </div>
+
+  <!-- SIDEBAR MENU -->
+<!-- SIDEBAR MENU (fix this) -->
+<div id="sidebarMenu" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">×</a>
+  <ul class="main-menu">
+    <li>
+  <span class="menu-title" onclick="location.href='theCorner.html'">
+    THE CORNER 
+    <span class="plus-icon" onclick="event.stopPropagation(); toggleSubmenu(this)">+</span>
+  </span>
+  <ul class="submenu">
+    <li><a href="creative_corner.html">THE CREATIVE CORNER</a></li>
+    <li><a href="culture_vibe.html">CULTURE VIBE</a></li>
+    <li><a href="lifestyle_edit.html">THE LIFESTYLE EDIT</a></li>
+    <li><a href="screen_scene.html">SCREEN & SCENE</a></li>
+    <li><a href="global_escapes.html">GLOBAL ESCAPES</a></li>
+  </ul>
+</li>
+
+    <li>
+  <span class="menu-title" onclick="location.href='fashion.html'">
+    FASHION
+    <span class="plus-icon" onclick="event.stopPropagation(); toggleSubmenu(this)">+</span>
+  </span>      <ul class="submenu">
+        <li><a href="creative_corner.html"></a>PULSE</a></li>
+        <li><a href="creative_corner.html"></a>RUNAWAY</a></li>
+        <li><a href="creative_corner.html"></a>THE FASHION CORNER</a></li>
+        <li><a href="creative_corner.html"></a>EDITORIAL</a></li>
+        <li><a href="creative_corner.html"></a>FASHION THREADS</a></li>
+      </ul>
+    </li>
+    <li>
+      <span class="menu-title" onclick="location.href='beauty.html'">
+    BEAUTY
+    <span class="plus-icon" onclick="event.stopPropagation(); toggleSubmenu(this)">+</span>
+  </span>  <ul class="submenu">
+        <li><a href="creative_corner.html"></a>HEADS UP!</a></li>
+        <li><a href="creative_corner.html"></a>THE BEAUTY CORNER</a></li>
+        <li><a href="creative_corner.html"></a>EDITORIAL</a></li>
+        <li><a href="creative_corner.html"></a>BEYOND BEAUTY</a></li>
+        <li><a href="creative_corner.html"></a>THE TRIBE</a></li>
+      </ul>
+    </li>
+    <li><span class="menu-title">NEWSLETTER</span></li>
+  </ul>
+</div>
+
+
+  <!-- OVERLAY -->
+  <div id="overlay" class="overlay" onclick="closeMenu()"></div>
+
+  <!-- MENU JS -->
+  <script>
+    function openMenu() {
+      document.getElementById("sidebarMenu").style.width = "300px";
+      document.getElementById("overlay").style.display = "block";
+    }
+
+    function closeMenu() {
+      document.getElementById("sidebarMenu").style.width = "0";
+      document.getElementById("overlay").style.display = "none";
+    }
+  </script>
+<script>
+  let menuOpen = false;
+
+  function toggleMenu() {
+    const sidebar = document.getElementById("sidebarMenu");
+    const overlay = document.getElementById("overlay");
+
+    if (menuOpen) {
+      sidebar.style.width = "0";
+      overlay.style.display = "none";
+    } else {
+      sidebar.style.width = "300px";
+      overlay.style.display = "block";
+    }
+
+    menuOpen = !menuOpen;
+  }
+
+  function closeMenu() {
+    document.getElementById("sidebarMenu").style.width = "0";
+    document.getElementById("overlay").style.display = "none";
+    menuOpen = false;
+  }
+</script>
+
+</body>
+</html> 

@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&family=Karma&display=swap');
+
+/* STUDIO SECTION */
+.studio-section {
+  max-width: 800px;
+  margin: 120px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.studio-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 100px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1;
+  margin: 0;
+  font-weight: 400;
+}
+
+.studio-title .us-text {
+  font-size: 100px;
+  font-weight: 400;
+}
+
+.studio-email {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #000;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+/* IMAGE */
+.pink-image {
+  width: 100%;
+  max-width: 80vw;
+  height: 70vh;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+
+/* WE MAKE TITLE */
+.we-make-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: 'Unica One', sans-serif;
+  font-size: 120px;
+  text-transform: uppercase;
+  gap: 2em; /* space between WE and MAKE */
+  margin-top: 80px;
+  margin-bottom: 10px;
+  margin-left: 60px;
+  font-weight: normal;
+}
+
+/* CONTAINER FOR LEFT + RIGHT */
+.split-layout {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: 0;
+}
+
+/* LEFT TITLE BLOCK */
+.split-title {
+  display: flex;
+  flex-direction: column;
+  font-size:110px;
+  font-weight: normal;
+  line-height: 1.2;
+  font-family: 'Unica One', sans-serif;
+  text-transform: uppercase;
+  margin-left: -400px;
+  margin-top: -50px;
+}
+
+/* RIGHT TEXT */
+.right-text {
+  font-family: 'Karma', serif;
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 500px;
+}
+
+.split-title span:nth-child(3) {
+  margin-left: 60px; /* Adjust this value as needed */
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .we-make-title {
+    font-size: 2.5rem;
+    flex-wrap: wrap;
+  }
+
+  .split-layout {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .split-title {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .right-text {
+    text-align: justify;
+    font-size: 16px;
+    margin: 0 auto;
+  }
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .studio-title,
+  .studio-title .us-text {
+    font-size: 60px;
+  }
+
+  .split-title {
+    font-size: 2.8rem;
+    margin-left: 1em;
+    text-align: center;
+  }
+
+  .we-make-title {
+    font-size: 2.2rem;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .split-layout {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .right-text {
+    padding-top: 0;
+    font-size: 16px;
+  }
+}

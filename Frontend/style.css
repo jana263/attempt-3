@@ -1,0 +1,851 @@
+/* hearder css  sloding menu */
+
+
+/* General body layout and text styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+  font-weight: 300; /* Light */
+  font-size: 16px;
+  line-height: 1.75;
+  color: #111;
+}
+
+.custom-logo-line hr {
+  width: 100%;
+  border: none;
+  height: 1px;
+  background-color: black;
+  margin: 5px 0;
+}
+
+
+/* Fixed top bar */
+.custom-topbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+  border-bottom: 1px solid #ffffff;
+}
+
+/* Header container centered max width */
+.custom-header-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  font-size: 24px;
+  font-family: 'Karma', sans-serif;
+  position: relative;
+}
+
+/* Left and right buttons */
+.custom-button {
+  cursor: pointer;
+  padding: 8px 16px;
+  font-size: 24px;
+  color: #000;
+  user-select: none;
+  z-index: 2;
+}
+
+/* Center logo with horizontal lines */
+.custom-logo-line {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+}
+
+.custom-logo-line hr {
+  width: 100%;
+  border: none;
+  height: 1px;
+  background-color: black;
+  margin: 5px 0;
+}
+
+.logo-img {
+  height: 100px;
+  object-fit: contain;
+}
+
+/* Full-width hero image container */
+.hero-image {
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 200px;
+}
+
+/* Hero image settings */
+.hero-image img {
+  max-width: 60%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Top header bar with logo */
+.w3-top {
+  border-bottom: 1px solid #ffffff;
+}
+
+/* Logo image styling in top bar */
+.w3-top img {
+  height: 50px;
+  object-fit: contain;
+}
+
+/* Global horizontal line style */
+hr {
+  border: none;
+  height: 1px;
+  background-color: #000;
+  margin: 60px auto;
+  width: 80%;
+}
+
+/* Container for main image grid */
+#w3-row-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 0 40px;
+}
+
+/* Each image box within the grid */
+.w3-quarter {
+
+  max-width: 300px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Images inside .w3-quarter */
+.w3-quarter img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect on images */
+.w3-quarter img:hover {
+  transform: scale(1.02);
+}
+
+/* Text description below each image */
+.w3-quarter p {
+  text-align: justify;
+  margin-top: 10px;
+  font-size: 15px;
+  color: #444;
+}
+
+.line-with-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Reduce gap */
+  margin: 70px auto;
+  max-width: 90%;
+  flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+
+/* Horizontal lines in title bar */
+.line-with-title hr {
+  flex-grow: 1;
+  border: none;
+  height: 1px;
+  background-color: black;
+  margin: 0;                     /* ✅ Remove default vertical spacing */
+}
+
+
+/* Featured section title style */
+.section-title {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 40px;
+  font-family: 'Bebas Neue', sans-serif;
+  white-space: nowrap; /* Prevent it from wrapping */
+  line-height: 1;
+}
+/* Side-by-side image and text layout */
+.image-text-row {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* center all items together */
+  gap: 0; /* remove automatic spacing */
+  padding: 20px;
+}
+
+.side-image {
+  width: 200px; /* or your preferred size */
+  margin: 0 40px; /* controls distance from center */
+}
+
+.narrow-paragraph {
+  max-width: 300px;
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+
+.side-image:first-of-type {
+  margin-right: 100px;
+}
+
+.side-image:last-of-type {
+  margin-left: 100px;
+}
+
+/* Main logo size and positioning */
+.logo-img {
+  height: 200px;
+  transform: scale(2.2);
+  transform-origin: center;
+}
+
+/* Logo fallback styling */
+.logo-img {
+  max-height: 500px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Container for logo with horizontal lines */
+.logo-line-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Horizontal lines in logo section */
+.logo-line-container hr {
+  flex-grow: 1;
+  border: none;
+  height: 1px;
+  background-color: black;
+}
+
+/* Logo image inside logo-line-container */
+.logo-line-container img {
+  height: 50px;
+}
+
+/* Editorial link block styling */
+.editorial-card {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  gap: 20px;
+}
+
+/* Split feature layout (text & image) */
+.featured-split {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* Left text block in featured section */
+.featured-text {
+  flex: 1;
+  max-width: 400px;
+}
+
+/* Right image block in featured section */
+.featured-image {
+  flex: 2;
+  max-width: 600px;
+}
+
+/* Section heading label */
+.section-label {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 50px;
+  letter-spacing: 2px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* Wrapper for the featured section */
+.featured-se
+ction {
+  padding: 80px 20px;
+  background-color: #fff;
+}
+
+/* Grid layout inside featured section */
+.featured-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 90px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Text container in featured grid */
+.featured-text {
+  flex: 1;
+  min-width: 500px;
+  max-width: 800px;
+}
+
+/* Author and date line */
+.byline {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #444;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+/* Date formatting */
+.date {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+/* Main title style */
+.title {
+  font-size: 200px;
+  font-weight: bold;
+  line-height: 0.85;
+  margin: 0;
+  font-family: 'Georgia', serif;
+}
+
+/* Subtitle under main title */
+.subtitle {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  color: #333;
+}
+
+/* Responsive image in featured section */
+.featured-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+/* Hero image with full viewport width */
+.hero-image {
+  position: relative;
+  width: 200vw;
+  height: 500px;
+  overflow: hidden;
+}
+
+/* Hero image content styling */
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Split layout for articles or cards */
+.split-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 0 20px;
+  align-items: stretch;
+}
+
+/* Large image on the left */
+.left-large {
+  position: relative;
+  flex: 1.2;
+  min-width: 300px;
+}
+
+/* Image inside large left block */
+.left-large img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 6px;
+}
+
+/* Text overlay centered on image */
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-family: Georgia, serif;
+}
+
+/* Headline text in overlay */
+.overlay-text h2 {
+  font-size: 34px;
+  font-style: italic;
+  margin: 10px 0;
+}
+
+/* Meta and date in overlay */
+.overlay-text .meta,
+.overlay-text .date {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/* Right stacked column */
+.right-stack {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  min-width: 300px;
+  justify-content: space-between;
+}
+
+/* Individual card layout */
+.card {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+  height: 50%;
+}
+
+/* Image in card */
+.card img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
+
+/* Text block inside card */
+.card-text {
+  flex: 1;
+}
+
+/* Title in card */
+.card-text h3 {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+/* Author/date info in card */
+.card-text .meta {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+/* Description in card */
+.card-text .description {
+  font-size: 14px;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Layout for quote section */
+.quote-layout {
+  display: flex;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 0 40px;
+  align-items: flex-start;
+}
+
+/* Left column of quote */
+.quote-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Right column of quote */
+.quote-right {
+  flex: 1;
+}
+
+/* Decorative frame for quote mark */
+.quote-frame {
+  position: relative;
+  width: 120px;
+  height: 100px;
+  margin-bottom: 30px;
+}
+
+.quote-frame::before,
+.quote-frame::after {
+  content: '';
+  position: absolute;
+  background-color: rgb(246, 255, 0);
+}
+
+.quote-frame::before {
+  width: 4px;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.quote-frame::after {
+  height: 4px;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+/* Big quote symbol styling */
+.quote-icon {
+  font-size: 90px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: black;
+}
+
+/* Author info styling */
+.author {
+  font-size: 14px;
+  color: #333;
+  font-style: italic;
+  margin-bottom: 6px;
+}
+
+/* Headline for quote block */
+.headline {
+  font-size: 34px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+/* Body text inside quote */
+.quote-text,
+.full-article {
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.7;
+  color: #222;
+}
+
+/* Magazine grid layout (3 columns) */
+.magazine-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 60px 80px;
+}
+
+/* Items inside the magazine grid */
+.grid-item {
+  position: relative;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Card with text overlay */
+.text-overlay-card {
+  position: relative;
+}
+
+.text-overlay-card .overlay-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  text-shadow: 0px 0px 10px rgba(0,0,0,0.6);
+  font-family: 'Georgia', serif;
+}
+
+.overlay-text .small {
+  font-size: 14px;
+  margin: 0;
+}
+
+.overlay-text h3 {
+  font-size: 24px;
+  margin: 5px 0;
+}
+
+/* Text below image card */
+.text-below-card .small {
+  font-size: 13px;
+  margin: 10px 0 5px;
+  text-transform: uppercase;
+}
+
+.text-below-card h3 {
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+.text-below-card .description {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Quote section layout and styling */
+.quote-section {
+  display: flex;
+  gap: 60px;
+  padding: 100px 80px;
+  align-items: flex-start;
+}
+
+/* Left quote block design */
+.quote-left {
+  height: 290px;
+  padding: 40px 60px;
+  border-top: 3px solid #000;
+  border-left: 3px solid black;
+  border-radius: 40px 0 0 0;
+  position: relative;
+  background-color: #fff;
+}
+
+/* Quote mark styling */
+.quote-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.quote-icon {
+  position: relative;
+  left: -20px;
+  top: -110px;
+  font-size: 130px;
+  font-weight: bold;
+  font-family: 'Anton', sans-serif;
+  color: black;
+  background-color: white;
+  width: 70px;
+  height: 90px;
+}
+
+/* Author name inside left quote block */
+.author {
+  font-size: 18px;
+  font-style: italic;
+  background-color: #fff;
+  margin-top: -90px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+}
+
+/* Date styling */
+.date {
+  font-size: 13px;
+  color: #666;
+}
+
+/* Main quote headline */
+.headline {
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 30px 0;
+}
+
+/* Highlighted quote text background */
+.quote-text {
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.7;
+  background-color: red;
+}
+
+/* Right block of quote section */
+.quote-right {
+  flex: 1;
+  height: 500px;
+  font-size: 16px;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+
+.tpc-3-column {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.column {
+  flex: 1;
+}
+
+/* Layout for the title + author block */
+.title-author-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+/* Title words with spacing */
+.title-text {
+  font-family: 'Anton', sans-serif;
+  font-size: 34px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Each word in title spaced */
+.title-text .word {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+/* Author info aligned to the right of title */
+.author-meta {
+  font-size: 10px;
+  text-align: middle;
+  text-transform: uppercase;
+  color: #444;
+  line-height: 1.4;
+}
+
+/* Image below the title-author block */
+.left-column img {
+  width: 350px;
+  height: 350px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+
+.center-column .image-overlay-card {
+  position: relative;
+  display: block;
+}
+
+.center-column img {
+  width: 350px;
+  height: 550px;
+  border-radius: 8px;
+}
+
+.center-column .overlay-text {
+  position: relative;
+  left: 50%;
+  top: -150px;
+  color: white;
+  text-shadow: 0 0 10px rgba(0,0,0,0.5);
+  gap: 40px;
+  padding: 0 20px;
+  font-size: 12px;
+}
+
+.right-column img {
+  width: 350px;
+  height: 300px;
+  border-radius: 8px;
+}
+
+.right-column .text-block {
+  margin-top: 20px;
+}
+
+.right-column .byline {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #555;
+}
+
+.right-column h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.right-column .description {
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* === Glowy clickable image effect === */
+    a img {
+      display: block;
+      width: 100%;
+      border-radius: 10px;
+      transition: all 0.4s ease-in-out;
+    }
+
+    a img:hover {
+      transform: scale(1.05);
+      box-shadow:
+        0 0 10px #fff,
+        0 0 20px rgb(133, 129, 129),
+        0 0 30px rgb(133, 129, 129),
+        0 0 40px rgb(133, 129, 129);
+    }
+    
+/* Responsive layout under 900px */
+@media screen and (max-width: 900px) {
+  .quote-section {
+    flex-direction: column;
+    padding: 60px 30px;
+  }
+
+  .quote-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .horizontal-line {
+    width: 100%;
+    margin: 20px 0 0;
+  }
+}
+
+
+ /* Responsive column stacking for small screens */
+ @media screen and (max-width: 768px) {
+  #w3-row-images {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
