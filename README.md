@@ -56,6 +56,9 @@ attempt 3/
 │ ├── server.js
 │ ├── package.json
 │ ├── data/
+
+
+
 ├── Frontend/
 │ ├── index.html
 │ ├── header.html / footer.html
@@ -65,9 +68,7 @@ attempt 3/
 │ ├── css/
 │ │ ├── style.css / header.css / footer.css / ...
 │ ├── Photos/
-├── docs/
-│ ├── Fiche_Typographique_Punu_Corner.pdf
-│ └── Documentation_Technique_Punu_Corner.pdf
+
 
 yaml
 Copy
